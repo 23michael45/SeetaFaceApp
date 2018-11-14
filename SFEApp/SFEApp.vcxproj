@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4AA16C9B-F5EF-40BE-9930-2732D50907BF}</ProjectGuid>
+    <RootNamespace>SFEApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\FaceIdentification\include;$(ProjectDir)..\FaceDetection\include;$(ProjectDir)..\FaceAlignment\include;%(AdditionalIncludeDirectories);..\..\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\core\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\proj;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\imgproc\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\photo\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\video\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\objdetect\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\highgui\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\imgcodecs\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\videoio\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\calib3d\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\features2d\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\flann\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\ml\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\shape\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\stitching\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\superres\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\videostab\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\proj\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_imgcodecs340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\FaceIdentification\include;$(ProjectDir)..\FaceDetection\include;$(ProjectDir)..\FaceAlignment\include;%(AdditionalIncludeDirectories);..\..\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\core\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\proj;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\imgproc\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\photo\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\video\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\objdetect\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\highgui\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\imgcodecs\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\videoio\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\calib3d\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\features2d\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\flann\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\ml\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\shape\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\stitching\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\superres\include;G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\opencv-3.4.0\modules\videostab\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_imgcodecs340.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\DevelopProj\FaceCloud\plugin\opencv-3.4.0\proj\lib\Release</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\FaceAlignment\src\cfan.cpp" />
+    <ClCompile Include="..\FaceAlignment\src\face_alignment.cpp" />
+    <ClCompile Include="..\FaceAlignment\src\sift.cpp" />
+    <ClCompile Include="..\FaceAlignment\src\test\face_alignment_test.cpp" />
+    <ClCompile Include="..\FaceDetection\src\classifier\lab_boosted_classifier.cpp" />
+    <ClCompile Include="..\FaceDetection\src\classifier\mlp.cpp" />
+    <ClCompile Include="..\FaceDetection\src\classifier\surf_mlp.cpp" />
+    <ClCompile Include="..\FaceDetection\src\face_detection.cpp" />
+    <ClCompile Include="..\FaceDetection\src\feat\lab_feature_map.cpp" />
+    <ClCompile Include="..\FaceDetection\src\feat\surf_feature_map.cpp" />
+    <ClCompile Include="..\FaceDetection\src\fust.cpp" />
+    <ClCompile Include="..\FaceDetection\src\io\lab_boost_model_reader.cpp" />
+    <ClCompile Include="..\FaceDetection\src\io\surf_mlp_model_reader.cpp" />
+    <ClCompile Include="..\FaceDetection\src\test\facedetection_test.cpp" />
+    <ClCompile Include="..\FaceDetection\src\util\image_pyramid.cpp" />
+    <ClCompile Include="..\FaceDetection\src\util\nms.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\bias_adder_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\blob.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\bn_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\common_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\conv_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\eltwise_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\inner_product_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\log.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\math_functions.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\max_pooling_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\pad_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\spatial_transform_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\test\test_face_recognizer.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\test\test_face_verification.cpp" />
+    <ClCompile Include="..\FaceIdentification\src\tform_maker_net.cpp" />
+    <ClCompile Include="..\FaceIdentification\tools\aligner.cpp" />
+    <ClCompile Include="..\FaceIdentification\tools\face_identification.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="DetectorWrapper.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="SeetaFace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DetectorWrapper.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="SeetaFace.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FaceIdentification">
+      <UniqueIdentifier>{a2b0d179-9b14-40c3-9eb1-7fb04a481baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection">
+      <UniqueIdentifier>{ad22def2-9df5-4812-abbc-420805af402d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceAlignment">
+      <UniqueIdentifier>{57f4e87b-6fee-401e-b526-053b04a8ec35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{bf828944-f717-46b8-bbbb-ef1930518ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceIdentification\tools">
+      <UniqueIdentifier>{60958d4c-c2b4-41ef-8ac9-06f2c246b2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceIdentification\src">
+      <UniqueIdentifier>{5a285b40-b573-4252-8005-8ed8cf9f9863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src">
+      <UniqueIdentifier>{1e1645ef-d8e6-445c-a3b8-35a76687e4c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src\util">
+      <UniqueIdentifier>{ccffe84b-880d-436e-9453-3388d871d04e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src\test">
+      <UniqueIdentifier>{ff8b5b7c-a60b-4d2a-b603-0eb95a778269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src\io">
+      <UniqueIdentifier>{1699deac-32e0-4f05-ba43-ee4bbe69a20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src\feat">
+      <UniqueIdentifier>{70fd3464-24dc-49d3-9a9b-08c29dfe1b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceDetection\src\classifier">
+      <UniqueIdentifier>{71574ad9-7dea-401b-80f3-1503cb39bd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceAlignment\src">
+      <UniqueIdentifier>{c213935c-2acf-4085-a90f-2c3597210b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceAlignment\src\test">
+      <UniqueIdentifier>{2e92a8b4-dba8-4310-93f9-5dc0b4a90bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FaceIdentification\src\test">
+      <UniqueIdentifier>{998df9e9-ae7b-4297-bb0a-5cf3d8c2bdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper">
+      <UniqueIdentifier>{4d849f2a-b9ca-46bf-ab56-fbe61df0520b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\tools\face_identification.cpp">
+      <Filter>FaceIdentification\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\tools\aligner.cpp">
+      <Filter>FaceIdentification\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\tform_maker_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\spatial_transform_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\pad_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\max_pooling_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\math_functions.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\log.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\inner_product_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\eltwise_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\conv_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\common_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\bn_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\blob.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\bias_adder_net.cpp">
+      <Filter>FaceIdentification\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\io\lab_boost_model_reader.cpp">
+      <Filter>FaceDetection\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\io\surf_mlp_model_reader.cpp">
+      <Filter>FaceDetection\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\feat\lab_feature_map.cpp">
+      <Filter>FaceDetection\src\feat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\feat\surf_feature_map.cpp">
+      <Filter>FaceDetection\src\feat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\util\image_pyramid.cpp">
+      <Filter>FaceDetection\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\util\nms.cpp">
+      <Filter>FaceDetection\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\classifier\lab_boosted_classifier.cpp">
+      <Filter>FaceDetection\src\classifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\classifier\mlp.cpp">
+      <Filter>FaceDetection\src\classifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\classifier\surf_mlp.cpp">
+      <Filter>FaceDetection\src\classifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\test\facedetection_test.cpp">
+      <Filter>FaceDetection\src\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceAlignment\src\test\face_alignment_test.cpp">
+      <Filter>FaceAlignment\src\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceAlignment\src\sift.cpp">
+      <Filter>FaceAlignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceAlignment\src\face_alignment.cpp">
+      <Filter>FaceAlignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceAlignment\src\cfan.cpp">
+      <Filter>FaceAlignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\fust.cpp">
+      <Filter>FaceDetection\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceDetection\src\face_detection.cpp">
+      <Filter>FaceDetection\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\test\test_face_verification.cpp">
+      <Filter>FaceIdentification\src\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FaceIdentification\src\test\test_face_recognizer.cpp">
+      <Filter>FaceIdentification\src\test</Filter>
+    </ClCompile>
+    <ClCompile Include="DetectorWrapper.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="SeetaFace.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DetectorWrapper.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="SeetaFace.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Feature.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
